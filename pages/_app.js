@@ -14,23 +14,23 @@ function MyApp({ Component, pageProps }) {
         <motion.div
           key={router.route}
           className='h-full'
-          initial='initialState'
-          animate='animateState'
-          exit='exitState'
+          initial='initial'
+          animate='animate'
+          exit='exit'
           variants={{
-            initialState: {
+            initial: {
               opacity: 0,
               clipPath: 'polygon(0 0, 0% 0, 0% 100%, 0% 100%)',
             },
-            animateState: {
+            animate: {
               opacity: 1,
               clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
             },
-            exitState: {
+            exit: {
               clipPath: 'polygon(0 0, 0% 0, 0% 100%, 0% 100%)',
             },
           }}
-          transition={{ duration: 0.75 }}
+          transition={{ duration: 0.75, delay: 0.5 }}
         >
           <Component {...pageProps} />
         </motion.div>
