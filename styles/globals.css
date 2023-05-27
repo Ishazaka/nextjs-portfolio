@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.translate-z-0 {
+  transform: translateZ(0px);
+}
+
+@layer base {
+  body {
+    @apply bg-secondary overflow-hidden;
+  }
+  .page {
+    @apply w-full h-screen overflow-hidden;
+  }
+}
