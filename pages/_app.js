@@ -1,9 +1,10 @@
 import { useRouter } from 'next/router';
 import '../styles/globals.css';
 
-// framer motion imports
+// framer motion
 import { AnimatePresence, motion } from 'framer-motion';
 
+// components
 import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {

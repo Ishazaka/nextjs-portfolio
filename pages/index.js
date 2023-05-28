@@ -1,21 +1,41 @@
+// next image
 import Image from 'next/image';
+
+// components
 import ParticlesContainer from '../components/ParticlesContainer';
 
 // motion
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+
+// icons
+import { HiArrowRight } from 'react-icons/hi2';
 
 const Home = () => {
   return (
     <div className='h-full bg-base text-white'>
-      <div className='w-full h-full bg-gradient-to-r from-base via-black to-black/10 pl-64'>
+      <div className='w-full h-full bg-gradient-to-r from-base via-black/40 to-black/10 pl-64'>
         <div className='flex flex-col justify-center h-full max-w-[40%]'>
           <h1 className='text-6xl mb-8 leading-tight font-semibold'>
             Transforming Ideas <br /> Into Digital Reality
           </h1>
-          <p className='max-w-lg'>
+          <p className='max-w-lg mb-16'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos
             adipisci, maiores atque deleniti voluptatibus optio.
           </p>
+          <Link
+            href={'/work'}
+            className='w-44 h-44 border rounded-full flex justify-center items-center relative group'
+          >
+            <Image
+              src={'/rounded-text.png'}
+              width={141}
+              height={141}
+              alt=''
+              className='animate-spin-slow'
+            />
+            <HiArrowRight className='absolute text-4xl group-hover:translate-x-2 transition-all duration-300' />
+          </Link>
         </div>
       </div>
       <div className='w-[1200px] h-full absolute right-0 bottom-0'>

@@ -17,9 +17,12 @@ module.exports = {
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
-        // 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        // 'gradient-conic':
-        //   'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
+      },
+      fontFamily: {
+        poppins: [`var(--font-poppins)`, 'sans-serif'],
       },
     },
   },
