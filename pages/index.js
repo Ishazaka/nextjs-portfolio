@@ -6,6 +6,8 @@ import ParticlesContainer from '../components/ParticlesContainer';
 
 // motion
 import { motion } from 'framer-motion';
+
+// link
 import Link from 'next/link';
 
 // icons
@@ -15,11 +17,11 @@ const Home = () => {
   return (
     <div className='h-full bg-base text-white'>
       <div className='w-full h-full bg-gradient-to-r from-base via-black/40 to-black/10 pl-64'>
-        <div className='flex flex-col justify-center h-full max-w-[40%]'>
+        <div className='flex flex-col justify-center h-full max-w-[40%] pt-20'>
           <h1 className='text-6xl mb-8 leading-tight font-semibold'>
             Transforming Ideas <br /> Into Digital Reality
           </h1>
-          <p className='max-w-lg mb-16'>
+          <p className='max-w-xl mb-16 font-light text-lg'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos
             adipisci, maiores atque deleniti voluptatibus optio.
           </p>
