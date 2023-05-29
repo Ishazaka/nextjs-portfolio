@@ -15,9 +15,9 @@ import { HiArrowRight } from 'react-icons/hi2';
 
 const Home = () => {
   return (
-    <div className='h-full bg-base text-white'>
-      <div className='w-full h-full bg-gradient-to-r from-base via-black/40 to-black/10 pl-64'>
-        <div className='flex flex-col justify-center h-full max-w-[40%] pt-20'>
+    <div className='h-full bg-primary text-white'>
+      <div className='w-full h-full bg-gradient-to-r from-primary via-black/40 to-black/10'>
+        <div className='flex flex-col justify-center h-full pt-20 container mx-auto'>
           <h1 className='text-6xl mb-8 leading-tight font-semibold'>
             Transforming Ideas <br /> Into Digital Reality
           </h1>

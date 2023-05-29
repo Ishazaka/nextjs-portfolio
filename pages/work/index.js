@@ -1,5 +1,5 @@
 const Work = () => {
-  return <div className='h-full bg-base'>work page</div>;
+  return <div className='h-full bg-primary'>work page</div>;
 };
 
 export default Work;
