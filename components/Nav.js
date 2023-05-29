@@ -16,7 +16,7 @@ const Nav = () => {
     // nav
     <nav className='flex flex-col items-center justify-center gap-y-4 fixed right-[2%] z-10 top-0 w-16 h-screen'>
       {/* nav inner */}
-      <div className='flex flex-col items-center justify-center gap-y-6 w-full h-max py-4 bg-[#292b3d] text-white text-xl rounded-full'>
+      <div className='flex flex-col items-center justify-center gap-y-6 w-full h-max py-4 bg-white/10 backdrop-blur-sm  text-white text-xl rounded-full'>
         {links.map((link) => {
           return (
             <Link href={link.path} className='relative flex items-center group'>
