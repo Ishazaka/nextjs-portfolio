@@ -1,6 +1,6 @@
 // link
 import Link from 'next/link';
-import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 // icons
 import {
@@ -35,21 +35,23 @@ const links = [
 ];
 
 const Nav = () => {
-  const [index, setIndex] = useState(0);
+  const router = useRouter();
+  const pathname = router.pathname;
+  console.log(pathname);
+
   return (
     // nav
-    <nav className='hidden xl:flex flex-col items-center justify-end xl:justify-center gap-y-4 fixed xl:right-[2%] z-10 top-0 w-full xl:w-16 max-w-md xl:max-w-none h-screen'>
+    <nav className='flex flex-col items-center justify-end xl:justify-center gap-y-4 fixed xl:right-[2%] z-10 top-0 w-full xl:w-16 max-w-md xl:max-w-none h-screen'>
       {/* nav inner */}
       <div className='flex flex-row w-full xl:flex-col items-center justify-between xl:justify-center gap-y-6 xl:w-full px-6 xl:px-0 h-max py-4 bg-white/10 backdrop-blur-sm text-xl text-white rounded-full'>
-        {links.map((link, itemIndex) => {
+        {links.map((link, index) => {
           return (
             <Link
               href={link.path}
               className={`${
-                index === itemIndex && 'text-accent'
+                link.path === pathname && 'text-accent'
               } relative flex items-center group hover:text-accent transition-all duration-300`}
-              key={itemIndex}
-              onClick={() => setIndex(itemIndex)}
+              key={index}
             >
               {/* tooltip */}
               <div className='absolute pr-14 right-0 hidden group-hover:flex'>

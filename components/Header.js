@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Nav from './Nav';
+// import Nav from './Nav';
 import Link from 'next/link';
 import Socials from './Socials';
 

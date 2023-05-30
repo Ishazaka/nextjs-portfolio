@@ -3,18 +3,13 @@ import Image from 'next/image';
 
 // components
 import ParticlesContainer from '../components/ParticlesContainer';
+import ProjectsBtn from '../components/ProjectsBtn';
 
 // motion
 import { motion } from 'framer-motion';
 
 // variants
 import { fadeIn } from '../variants';
-
-// link
-import Link from 'next/link';
-
-// icons
-import { HiArrowRight } from 'react-icons/hi2';
 
 const Home = () => {
   return (
@@ -27,7 +22,7 @@ const Home = () => {
             initial='hidden'
             animate={'show'}
             exit={'hidden'}
-            className='text-3xl xl:text-6xl mb-8 leading-tight font-semibold'
+            className='text-[44px] xl:text-6xl mb-8 leading-tight font-semibold'
           >
             Transforming Ideas <br /> Into Digital Reality
           </motion.h1>
@@ -43,27 +38,12 @@ const Home = () => {
             adipisci, maiores atque deleniti voluptatibus optio.
           </motion.p>
           {/* btn */}
-          <motion.div
-            variants={fadeIn('down', 0.4)}
-            initial='hidden'
-            animate={'show'}
-            exit={'hidden'}
-            className='mx-auto xl:mx-0'
-          >
-            <Link
-              href={'/work'}
-              className='w-44 h-44 border rounded-full flex justify-center items-center relative group'
-            >
-              <Image
-                src={'/rounded-text.png'}
-                width={141}
-                height={141}
-                alt=''
-                className='animate-spin-slow'
-              />
-              <HiArrowRight className='absolute text-4xl group-hover:translate-x-2 transition-all duration-300' />
-            </Link>
-          </motion.div>
+          <div className='bg-pink-50/10 flex justify-center relative z-50 xl:hidden'>
+            <ProjectsBtn />
+          </div>
+          <div className='hidden xl:flex'>
+            <ProjectsBtn />
+          </div>
         </div>
       </div>
       <div className='w-[1200px] h-full absolute right-0 bottom-0'>
