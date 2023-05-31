@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className='h-full bg-primary text-white'>
       <div className='w-full h-full bg-gradient-to-r from-primary via-black/70 to-black/10'>
-        <div className='flex flex-col justify-center xl:justify-center pt-36 text-center xl:text-left h-full container mx-auto'>
+        <div className='flex flex-col justify-center xl:pt-40 text-center xl:text-left h-full container mx-auto'>
           {/* title */}
           <motion.h1
             variants={fadeIn('down', 0.2)}
@@ -38,7 +38,7 @@ const Home = () => {
             adipisci, maiores atque deleniti voluptatibus optio.
           </motion.p>
           {/* btn */}
-          <div className='bg-pink-50/10 flex justify-center relative z-50 xl:hidden'>
+          <div className='flex justify-center relative z-50 xl:hidden'>
             <ProjectsBtn />
           </div>
           <div className='hidden xl:flex'>
