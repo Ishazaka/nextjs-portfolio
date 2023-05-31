@@ -8,9 +8,12 @@
 
 @layer base {
   body {
-    @apply bg-secondary overflow-hidden;
+    @apply bg-secondary overflow-hidden leading-relaxed;
   }
   .page {
     @apply w-full h-screen overflow-hidden;
+  }
+  .h1 {
+    @apply text-[48px] leading-tight xl:text-[60px] xl:leading-[1.1] mb-8 font-bold;
   }
 }

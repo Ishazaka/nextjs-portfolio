@@ -32,9 +32,10 @@ const Home = () => {
             initial='hidden'
             animate={'show'}
             exit={'hidden'}
-            className='text-[44px] xl:text-6xl mb-8 leading-tight font-semibold'
+            className='h1'
           >
-            Transforming Ideas <br /> Into Digital Reality
+            Transforming Ideas <br /> Into{' '}
+            <span className='text-accent'>Digital</span> Reality
           </motion.h1>
           {/* subtitle */}
           <motion.p
