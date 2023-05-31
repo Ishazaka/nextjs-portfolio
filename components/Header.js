@@ -1,6 +1,10 @@
+// next image
 import Image from 'next/image';
-// import Nav from './Nav';
+
+// next link
 import Link from 'next/link';
+
+// components
 import Socials from './Socials';
 
 const Header = () => {

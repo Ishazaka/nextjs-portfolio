@@ -16,6 +16,16 @@ const Home = () => {
     <div className='h-full bg-primary text-white'>
       <div className='w-full h-full bg-gradient-to-r from-primary via-black/70 to-black/10'>
         <div className='flex flex-col justify-center xl:pt-40 text-center xl:text-left h-full container mx-auto'>
+          {/* top left image */}
+          <div className='absolute -top-20 xl:-top-40 -left-32 -rotate-[70deg] mix-blend-color-dodge'>
+            <Image
+              src={'/top-left-img.png'}
+              width={500}
+              height={400}
+              className='translate-z-0'
+              alt=''
+            />
+          </div>
           {/* title */}
           <motion.h1
             variants={fadeIn('down', 0.2)}
