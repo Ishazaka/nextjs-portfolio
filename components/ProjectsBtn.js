@@ -25,12 +25,12 @@ const ProjectsBtn = () => {
     >
       <Link
         href={'/work'}
-        className='w-44 h-44 border rounded-full flex justify-center items-center relative group'
+        className='w-[185px] h-[185px] flex justify-center items-center relative group bg-circleStar bg-cover bg-center bg-no-repeat'
       >
         <Image
           src={'/rounded-text.png'}
-          width={141}
-          height={141}
+          width={140}
+          height={140}
           alt=''
           className='animate-spin-slow'
         />

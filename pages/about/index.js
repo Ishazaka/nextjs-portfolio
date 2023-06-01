@@ -23,29 +23,10 @@ const About = () => {
           width={700}
           height={700}
           className='translate-z-0'
+          alt=''
         />
       </motion.div>
-      <div className='container mx-auto h-full'>
-        <div className='w-full h-full flex flex-col xl:flex-row'>
-          <div className='flex-1 h-full flex flex-col items-center justify-center gap-y-12 text-center max-w-[80vw] mx-auto'>
-            <div className='max-w-[60%]'>
-              <h1 className='h1'>
-                Magnificent <span className='text-accent'>designs</span> are
-                born from captivating stories
-              </h1>
-              <p>
-                Since embarking on my journey as a freelance developer nearly 10
-                years ago, I've engaged in remote work for agencies, provided
-                consultation for startups, and collaborated with skilled
-                individuals to create digital products for both business and
-                consumer applications. I possess a quiet confidence, an innate
-                curiosity, and an unwavering dedication to enhancing my skills,
-                tackling one development problem at a time.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div className='container mx-auto h-full'>container</div>
     </div>
   );
 };

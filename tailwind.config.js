@@ -17,12 +17,14 @@ module.exports = {
       },
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
+        circleStar: 'url("/circle-star.svg")',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
+        sora: [`var(--font-sora)`, 'sans-serif'],
       },
     },
   },

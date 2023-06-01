@@ -1,7 +1,7 @@
 // link
 import Link from 'next/link';
 // fonts
-import { Poppins } from '@next/font/google';
+import { Poppins, Sora } from '@next/font/google';
 
 // components
 import Header from './Header';
@@ -13,9 +13,15 @@ const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
 });
 
+const sora = Sora({
+  subsets: ['latin'],
+  variable: '--font-sora',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+});
+
 const Layout = ({ children }) => {
   return (
-    <div className={`page ${poppins.variable} font-poppins`}>
+    <div className={`page ${sora.variable} font-sora`}>
       <Nav />
       <Header />
       {children}

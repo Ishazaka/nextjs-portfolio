@@ -35,7 +35,7 @@ const Home = () => {
             className='h1'
           >
             Transforming Ideas <br /> Into{' '}
-            <span className='text-accent'>Digital</span> Reality
+            <span className='text-accent'>Digital Reality</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -43,7 +43,7 @@ const Home = () => {
             initial='hidden'
             animate={'show'}
             exit={'hidden'}
-            className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 font-light text-base xl:text-lg'
+            className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos
             adipisci, maiores atque deleniti voluptatibus optio.
