@@ -7,14 +7,18 @@ import { fadeIn } from '../../variants';
 
 // react countup
 import CountUp from 'react-countup';
+
+// components
 import ProjectsBtn from '../../components/ProjectsBtn';
 import TopLeftImg from '../../components/TopLeftImg';
+import BottomRightImg from '../../components/BottomRightImg';
 
 const About = () => {
   return (
     <div className='h-full bg-primary py-32 text-white text-center xl:text-left'>
       {/* top left image */}
       <TopLeftImg />
+      <BottomRightImg />
       <motion.div
         variants={fadeIn('right', 0.2)}
         initial={'hidden'}
