@@ -27,7 +27,8 @@ const About = () => {
           alt=''
         />
       </motion.div>
-      <div className='container mx-auto h-full flex flex-col xl:flex-row gap-x-6'>
+      <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
+        {/* left */}
         <div className='flex-1 xl:pt-12'>
           <h1 className='h1'>
             Captivating <span className='text-accent'>stories</span> birth
@@ -42,22 +43,23 @@ const About = () => {
           </p>
           <ProjectsBtn />
         </div>
-        <div className='flex-1 flex flex-col justify-center items-center p-[72px]'>
+        {/* right */}
+        <div className='xl:w-[45%] flex flex-col justify-center items-center xl:p-[72px]'>
           <div className='flex flex-wrap justify-center h-full w-full'>
-            <div className='w-[50%] flex flex-col justify-center items-center border-b border-r border-white/10'>
-              <div className='text-6xl font-bold'>12+</div>
+            <div className='w-[50%] h-[120px] xl:h-[240px]  flex flex-col justify-center items-center border-b border-r border-white/10'>
+              <div className='text-4xl xl:text-6xl font-bold'>11+</div>
               <div>Years of experience</div>
             </div>
-            <div className='w-[50%] flex flex-col justify-center items-center border-b border-white/10'>
-              <div className='text-6xl font-bold'>250+</div>
+            <div className='w-[50%] h-[120px] xl:h-[240px]  flex flex-col justify-center items-center border-b border-white/10'>
+              <div className='text-4xl xl:text-6xl font-bold'>250+</div>
               <div>Happy clients</div>
             </div>
-            <div className='w-[50%] flex flex-col justify-center items-center border-r border-white/10'>
-              <div className='text-6xl font-bold'>650+</div>
+            <div className='w-[50%] h-[120px] xl:h-[240px]  flex flex-col justify-center items-center border-r border-white/10'>
+              <div className='text-4xl xl:text-6xl font-bold'>650+</div>
               <div>Projects done</div>
             </div>
-            <div className='w-[50%] flex flex-col justify-center items-center'>
-              <div className='text-6xl font-bold'>8</div>
+            <div className='w-[50%] h-[120px] xl:h-[240px]  flex flex-col justify-center items-center'>
+              <div className='text-4xl xl:text-6xl font-bold'>8</div>
               <div>Awards</div>
             </div>
           </div>
