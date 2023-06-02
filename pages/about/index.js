@@ -30,23 +30,47 @@ const About = () => {
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* left */}
         <div className='flex-1 xl:pt-12 flex flex-col justify-center'>
-          <h1 className='h1'>
+          <motion.h1
+            variants={fadeIn('down', 0.2)}
+            initial='hidden'
+            animate={'show'}
+            exit={'hidden'}
+            className='h1'
+          >
             Captivating <span className='text-accent'>stories</span> birth
             magnificent designs.
-          </h1>
-          <p className='max-w-[700px] mx-auto xl:mx-0 mb-4 xl:mb-12 px-2 xl:px-0'>
+          </motion.h1>
+          <motion.p
+            variants={fadeIn('down', 0.4)}
+            initial='hidden'
+            animate={'show'}
+            exit={'hidden'}
+            className='max-w-[700px] mx-auto xl:mx-0 mb-4 xl:mb-12 px-2 xl:px-0'
+          >
             10 years ago, I began freelancing as a developer. Since then, I've
             done remote work for agencies, consulted for startups, and
             collaborated on digital products for business and consumer use. With
             quiet confidence, curiosity, and a focus on continual improvement, I
             tackle development challenges one at a time.
-          </p>
-          <div className='hidden xl:flex'>
+          </motion.p>
+          <motion.div
+            variants={fadeIn('down', 0.6)}
+            initial='hidden'
+            animate={'show'}
+            exit={'hidden'}
+            className='hidden xl:flex'
+          >
             <ProjectsBtn />
-          </div>
+          </motion.div>
         </div>
         {/* right */}
-        <div className='flex-1 xl:flex-none xl:w-[45%] flex flex-col justify-center items-center xl:p-[50px] relative'>
+        <motion.div
+          variants={fadeIn('up', 0.4)}
+          initial='hidden'
+          animate={'show'}
+          exit={'hidden'}
+          className='flex-1 xl:flex-none xl:w-[45%] flex flex-col justify-center items-center xl:p-[50px] relative'
+        >
           <div className='flex flex-wrap w-full px-6 xl:px-0'>
             <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-b border-r border-white/10'>
               <div className='text-3xl xl:text-6xl font-bold mb-2'>
@@ -81,7 +105,7 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -52,9 +52,15 @@ const Home = () => {
           <div className='flex justify-center relative z-50 xl:hidden'>
             <ProjectsBtn />
           </div>
-          <div className='hidden xl:flex'>
+          <motion.div
+            variants={fadeIn('down', 0.4)}
+            initial='hidden'
+            animate={'show'}
+            exit={'hidden'}
+            className='hidden xl:flex'
+          >
             <ProjectsBtn />
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className='w-[1200px] h-full absolute right-0 bottom-0'>
