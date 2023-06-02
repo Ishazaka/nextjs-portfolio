@@ -46,13 +46,13 @@ const About = () => {
           </div>
         </div>
         {/* right */}
-        <div className='flex-1 xl:w-[45%] flex flex-col justify-center items-center xl:p-[72px]'>
+        <div className='flex-1 xl:flex-none xl:w-[45%] flex flex-col justify-center items-center xl:p-[72px]'>
           <div className='flex flex-wrap w-full px-6 xl:px-0'>
             <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-b border-r border-white/10'>
               <div className='text-3xl xl:text-6xl font-bold mb-2'>
                 <CountUp start={0} end={11} duration={8} />+
               </div>
-              <p className='uppercase text-[13px] tracking-widest'>
+              <p className='uppercase text-xs xl:text-[13px] tracking-widest max-w-[100px] xl:max-w-none'>
                 Years of experience
               </p>
             </div>
@@ -60,7 +60,7 @@ const About = () => {
               <div className='text-3xl xl:text-6xl font-bold mb-2'>
                 <CountUp start={0} end={250} duration={8} />+
               </div>
-              <p className='uppercase text-[13px] tracking-widest'>
+              <p className='uppercase text-xs xl:text-[13px] tracking-widest max-w-[100px] xl:max-w-none'>
                 Happy clients
               </p>
             </div>
@@ -68,7 +68,7 @@ const About = () => {
               <div className='text-3xl xl:text-6xl font-bold mb-2'>
                 <CountUp start={0} end={650} duration={10} />+
               </div>
-              <p className='uppercase text-[13px] tracking-widest'>
+              <p className='uppercase text-xs xl:text-[13px] tracking-widest max-w-[100px] xl:max-w-none'>
                 Projects done
               </p>
             </div>
@@ -76,7 +76,9 @@ const About = () => {
               <div className='text-3xl xl:text-6xl font-bold mb-2'>
                 <CountUp start={0} end={8} duration={10} />
               </div>
-              <p className='uppercase text-[13px] tracking-widest'>Awards</p>
+              <p className='uppercase text-xs xl:text-[13px] tracking-widest max-w-[100px] xl:max-w-none'>
+                Awards
+              </p>
             </div>
           </div>
         </div>
