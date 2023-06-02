@@ -27,7 +27,7 @@ const About = () => {
           alt=''
         />
       </motion.div>
-      <div className='container mx-auto h-full flex flex-col xl:flex-row gap-x-4'>
+      <div className='container mx-auto h-full flex flex-col xl:flex-row gap-x-6'>
         <div className='flex-1 xl:pt-12'>
           <h1 className='h1'>
             Captivating <span className='text-accent'>stories</span> birth
@@ -42,27 +42,23 @@ const About = () => {
           </p>
           <ProjectsBtn />
         </div>
-        <div className='flex-1 bg-yellow-50/10'>
-          <div className='flex flex-col justify-center items-stretch h-full w-full bg-yellow-200/10'>
-            <div className='flex'>
-              <div className='flex-1 bg-red-50/10'>
-                <div className='text-5xl font-bold'>12+</div>
-                <div>Years of experience</div>
-              </div>
-              <div className='flex-1 bg-red-50/10'>
-                <div className='text-5xl font-bold'>120+</div>
-                <div>Happy clients</div>
-              </div>
+        <div className='flex-1 flex flex-col justify-center items-center p-[72px]'>
+          <div className='flex flex-wrap justify-center h-full w-full'>
+            <div className='w-[50%] flex flex-col justify-center items-center border-b border-r border-white/10'>
+              <div className='text-6xl font-bold'>12+</div>
+              <div>Years of experience</div>
             </div>
-            <div className='flex'>
-              <div className='flex-1 bg-red-50/10'>
-                <div className='text-5xl font-bold'>12+</div>
-                <div>Projects done</div>
-              </div>
-              <div className='flex-1 bg-red-50/10'>
-                <div className='text-5xl font-bold'>120</div>
-                <div>Awards</div>
-              </div>
+            <div className='w-[50%] flex flex-col justify-center items-center border-b border-white/10'>
+              <div className='text-6xl font-bold'>250+</div>
+              <div>Happy clients</div>
+            </div>
+            <div className='w-[50%] flex flex-col justify-center items-center border-r border-white/10'>
+              <div className='text-6xl font-bold'>650+</div>
+              <div>Projects done</div>
+            </div>
+            <div className='w-[50%] flex flex-col justify-center items-center'>
+              <div className='text-6xl font-bold'>8</div>
+              <div>Awards</div>
             </div>
           </div>
         </div>
