@@ -49,28 +49,34 @@ const About = () => {
         <div className='flex-1 xl:w-[45%] flex flex-col justify-center items-center xl:p-[72px]'>
           <div className='flex flex-wrap w-full px-6 xl:px-0'>
             <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-b border-r border-white/10'>
-              <div className='text-3xl xl:text-6xl font-bold'>
+              <div className='text-3xl xl:text-6xl font-bold mb-2'>
                 <CountUp start={0} end={11} duration={8} />+
               </div>
-              <p>Years of experience</p>
+              <p className='uppercase text-[13px] tracking-widest'>
+                Years of experience
+              </p>
             </div>
             <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-b border-white/10'>
-              <div className='text-3xl xl:text-6xl font-bold'>
+              <div className='text-3xl xl:text-6xl font-bold mb-2'>
                 <CountUp start={0} end={250} duration={8} />+
               </div>
-              <p>Happy clients</p>
+              <p className='uppercase text-[13px] tracking-widest'>
+                Happy clients
+              </p>
             </div>
             <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-r border-white/10'>
-              <div className='text-3xl xl:text-6xl font-bold'>
+              <div className='text-3xl xl:text-6xl font-bold mb-2'>
                 <CountUp start={0} end={650} duration={10} />+
               </div>
-              <p>Projects done</p>
+              <p className='uppercase text-[13px] tracking-widest'>
+                Projects done
+              </p>
             </div>
             <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center'>
-              <div className='text-3xl xl:text-6xl font-bold'>
+              <div className='text-3xl xl:text-6xl font-bold mb-2'>
                 <CountUp start={0} end={8} duration={10} />
               </div>
-              <p>Awards</p>
+              <p className='uppercase text-[13px] tracking-widest'>Awards</p>
             </div>
           </div>
         </div>
