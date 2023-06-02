@@ -11,7 +11,7 @@ import ProjectsBtn from '../../components/ProjectsBtn';
 
 const About = () => {
   return (
-    <div className='h-full bg-primary py-32 text-white'>
+    <div className='h-full bg-primary py-32 text-white text-center xl:text-left'>
       <motion.div
         variants={fadeIn('right', 0.2)}
         initial={'hidden'}
@@ -29,38 +29,48 @@ const About = () => {
       </motion.div>
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* left */}
-        <div className='flex-1 xl:pt-12'>
+        <div className='flex-1 xl:pt-12 flex flex-col justify-center'>
           <h1 className='h1'>
             Captivating <span className='text-accent'>stories</span> birth
             magnificent designs.
           </h1>
-          <p className='max-w-[700px] mb-12'>
+          <p className='max-w-[700px] mx-auto xl:mx-0 mb-4 xl:mb-12 px-2 xl:px-0'>
             10 years ago, I began freelancing as a developer. Since then, I've
             done remote work for agencies, consulted for startups, and
             collaborated on digital products for business and consumer use. With
             quiet confidence, curiosity, and a focus on continual improvement, I
             tackle development challenges one at a time.
           </p>
-          <ProjectsBtn />
+          <div className='hidden xl:flex'>
+            <ProjectsBtn />
+          </div>
         </div>
         {/* right */}
-        <div className='xl:w-[45%] flex flex-col justify-center items-center xl:p-[72px]'>
-          <div className='flex flex-wrap justify-center h-full w-full'>
-            <div className='w-[50%] h-[120px] xl:h-[240px]  flex flex-col justify-center items-center border-b border-r border-white/10'>
-              <div className='text-4xl xl:text-6xl font-bold'>11+</div>
-              <div>Years of experience</div>
+        <div className='flex-1 xl:w-[45%] flex flex-col justify-center items-center xl:p-[72px]'>
+          <div className='flex flex-wrap w-full px-6 xl:px-0'>
+            <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-b border-r border-white/10'>
+              <div className='text-3xl xl:text-6xl font-bold'>
+                <CountUp start={0} end={11} duration={8} />+
+              </div>
+              <p>Years of experience</p>
             </div>
-            <div className='w-[50%] h-[120px] xl:h-[240px]  flex flex-col justify-center items-center border-b border-white/10'>
-              <div className='text-4xl xl:text-6xl font-bold'>250+</div>
-              <div>Happy clients</div>
+            <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-b border-white/10'>
+              <div className='text-3xl xl:text-6xl font-bold'>
+                <CountUp start={0} end={250} duration={8} />+
+              </div>
+              <p>Happy clients</p>
             </div>
-            <div className='w-[50%] h-[120px] xl:h-[240px]  flex flex-col justify-center items-center border-r border-white/10'>
-              <div className='text-4xl xl:text-6xl font-bold'>650+</div>
-              <div>Projects done</div>
+            <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-r border-white/10'>
+              <div className='text-3xl xl:text-6xl font-bold'>
+                <CountUp start={0} end={650} duration={10} />+
+              </div>
+              <p>Projects done</p>
             </div>
-            <div className='w-[50%] h-[120px] xl:h-[240px]  flex flex-col justify-center items-center'>
-              <div className='text-4xl xl:text-6xl font-bold'>8</div>
-              <div>Awards</div>
+            <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center'>
+              <div className='text-3xl xl:text-6xl font-bold'>
+                <CountUp start={0} end={8} duration={10} />
+              </div>
+              <p>Awards</p>
             </div>
           </div>
         </div>
