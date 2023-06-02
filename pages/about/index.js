@@ -8,20 +8,13 @@ import { fadeIn } from '../../variants';
 // react countup
 import CountUp from 'react-countup';
 import ProjectsBtn from '../../components/ProjectsBtn';
+import TopLeftImg from '../../components/TopLeftImg';
 
 const About = () => {
   return (
     <div className='h-full bg-primary py-32 text-white text-center xl:text-left'>
       {/* top left image */}
-      <div className='absolute -top-20 xl:-top-40 -left-32 -rotate-[70deg] mix-blend-color-dodge'>
-        <Image
-          src={'/top-left-img.png'}
-          width={500}
-          height={400}
-          className='translate-z-0'
-          alt=''
-        />
-      </div>
+      <TopLeftImg />
       <motion.div
         variants={fadeIn('right', 0.2)}
         initial={'hidden'}
