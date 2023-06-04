@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const BottomRightImg = () => {
   return (
-    <div className='absolute -right-32 -bottom-0 mix-blend-color-dodge'>
+    <div className='hidden xl:flex absolute -right-32 -bottom-0 mix-blend-color-dodge'>
       <Image
         src={'/bottom-right-img.png'}
         width={350}
