@@ -1,8 +1,13 @@
 import { HiAcademicCap, HiBriefcase } from 'react-icons/hi';
-
 // components
 import CardLeft from '../../components/CardLeft';
 import CardRight from '../../components/CardRight';
+
+// motion
+import { motion } from 'framer-motion';
+
+// variants
+import { fadeIn } from '../../variants';
 
 const educationData = [
   {
@@ -50,11 +55,23 @@ const Resume = () => {
   return (
     <div className='h-full bg-primary py-32 text-white'>
       <div className='container mx-auto'>
-        <h1 className='h1 text-center mb-12'>
+        <motion.h1
+          variants={fadeIn('up', 0.2)}
+          initial={'hidden'}
+          animate={'show'}
+          exit={'hidden'}
+          className='h1 text-center mb-12'
+        >
           Education & <span className='text-accent'>Experience</span>
-        </h1>
+        </motion.h1>
         {/* timeline */}
-        <div className='px-10 xl:px-0'>
+        <motion.div
+          variants={fadeIn('up', 0.3)}
+          initial={'hidden'}
+          animate={'show'}
+          exit={'hidden'}
+          className='px-10 xl:px-0'
+        >
           {/* top */}
           <div className='w-full max-w-xl mx-auto border-b border-white/10 pb-3'>
             <div className='flex justify-between px-24'>
@@ -88,7 +105,7 @@ const Resume = () => {
               })}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
