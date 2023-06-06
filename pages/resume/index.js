@@ -1,47 +1,48 @@
 import { HiAcademicCap, HiBriefcase } from 'react-icons/hi';
 
 // components
-import Card from '../../components/Card';
+import CardLeft from '../../components/CardLeft';
+import CardRight from '../../components/CardRight';
 
 const educationData = [
   {
-    stage: 'December 2000 - May 2004',
-    school: 'MIT School of Engineering',
+    pretitle: 'December 2000 - May 2004',
+    title: 'MIT School of Engineering',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, necessitatibus omnis! Aliquid deserunt quam provident praesentium expedita voluptatibus ducimus ipsa.',
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
   },
   {
-    stage: 'December 2000 - May 2004',
-    school: 'MIT School of Engineering',
+    pretitle: 'December 2000 - May 2004',
+    title: 'MIT School of Engineering',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, necessitatibus omnis! Aliquid deserunt quam provident praesentium expedita voluptatibus ducimus ipsa.',
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
   },
   {
-    stage: 'December 2000 - May 2004',
-    school: 'MIT School of Engineering',
+    pretitle: 'December 2000 - May 2004',
+    title: 'MIT School of Engineering',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, necessitatibus omnis! Aliquid deserunt quam provident praesentium expedita voluptatibus ducimus ipsa.',
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
   },
 ];
 
 const employmentData = [
   {
-    stage: 'December 2000 - May 2004',
-    company: 'CM Development Solution',
+    pretitle: 'December 2000 - May 2004',
+    title: 'CM Development Solution',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, necessitatibus omnis! Aliquid deserunt quam provident praesentium expedita voluptatibus ducimus ipsa.',
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
   },
   {
-    stage: 'December 2000 - May 2004',
-    company: 'CM Development Solution',
+    pretitle: 'December 2000 - May 2004',
+    title: 'CM Development Solution',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, necessitatibus omnis! Aliquid deserunt quam provident praesentium expedita voluptatibus ducimus ipsa.',
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
   },
   {
-    stage: 'December 2000 - May 2004',
-    company: 'CM Development Solution',
+    pretitle: 'December 2000 - May 2004',
+    title: 'CM Development Solution',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, necessitatibus omnis! Aliquid deserunt quam provident praesentium expedita voluptatibus ducimus ipsa.',
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
   },
 ];
 
@@ -56,7 +57,7 @@ const Resume = () => {
         <div className='px-10 xl:px-0'>
           {/* top */}
           <div className='w-full max-w-xl mx-auto border-b border-white/10 pb-3'>
-            <div className='flex justify-between px-6'>
+            <div className='flex justify-between px-24'>
               <div className='flex flex-col items-center'>
                 <HiAcademicCap className='text-5xl m-2' />
                 <div className='text-[13px] uppercase tracking-wider'>
@@ -71,17 +72,19 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          <div className='bg-pink-50/10 max-w-4xl mx-auto flex flex-col xl:flex-row justify-between h-[42vh] xl:h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-accent scrollbar-track-white/10 pr-2 py-4'>
-            <div className='relative flex-1 after:w-[1px] after:h-screen after:absolute after:bg-red-500 after:top-0 after:right-0 after:bottom-0 after:z-0'>
-              <div>
+          <div className='max-w-4xl mx-auto flex flex-col xl:flex-row justify-between h-[42vh] xl:h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-white/10 pr-2'>
+            {/* education */}
+            <div className='relative flex-1 after:w-[1px] after:h-[760px] after:absolute after:bg-white/10 after:top-0 after:right-0 after:bottom-0 after:z-0'>
+              <div className='p-4'>
                 {educationData.map((data, index) => {
-                  return <Card data={data} key={index} />;
+                  return <CardLeft data={data} key={index} />;
                 })}
               </div>
             </div>
-            <div className='flex-1 pt-20'>
+            {/* employment */}
+            <div className='flex-1 pt-20 px-4'>
               {employmentData.map((data, index) => {
-                return <Card data={data} key={index} />;
+                return <CardRight data={data} key={index} />;
               })}
             </div>
           </div>
