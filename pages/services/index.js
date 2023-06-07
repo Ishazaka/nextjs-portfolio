@@ -56,7 +56,7 @@ const Services = () => {
           What I can do.
         </motion.h1>
         {/* service list */}
-        <div className='grid grid-cols-1 xl:grid-cols-2 gap-6 xl:gap-8 xl:px-0 overflow-y-scroll h-[500px] scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-white/10 pr-2 xl:h-auto xl:overflow-visible'>
+        <div className='grid grid-cols-1 xl:grid-cols-2 gap-6 xl:gap-6 xl:px-0 overflow-y-scroll h-[500px] scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-white/10 pr-2 xl:h-auto xl:overflow-visible'>
           {serviceData.map((service, index) => {
             // destructure service
             const { icon, title, description } = service;
