@@ -14,42 +14,48 @@ import { fadeIn } from '../../variants';
 const educationData = [
   {
     pretitle: 'December 2000 - May 2004',
-    title: 'MIT School of Engineering',
+    title: 'Bachelor in Computer Science',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
+      'Completed a comprehensive curriculum in computer science, including coursework in algorithms.',
+    year: '2000 - 2004',
   },
   {
-    pretitle: 'December 2000 - May 2004',
-    title: 'MIT School of Engineering',
+    pretitle: 'June 2004 - July 2008',
+    title: 'Master of Business Administration',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
+      'Pursued advanced studies in business administration with a focus on strategic management and entrepreneurship.',
+    year: '2004 - 2008',
   },
   {
-    pretitle: 'December 2000 - May 2004',
-    title: 'MIT School of Engineering',
+    pretitle: 'August 2008 - April 2012',
+    title: 'Ph.D. in Electrical Engineering',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
+      'Conducted cutting-edge research in the field of electrical engineering, specializing in signal processing and communication systems.',
+    year: '2008 - 2012',
   },
 ];
 
 const employmentData = [
   {
     pretitle: 'December 2000 - May 2004',
-    title: 'CM Development Solutions',
+    title: 'Software Engineer',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
+      'Developed and maintained software solutions for clients. Collaborated with cross-functional teams to deliver high-quality products.',
+    year: '2000 - 2004',
   },
   {
-    pretitle: 'December 2000 - May 2004',
-    title: 'CM Development Solutions',
+    pretitle: 'June 2004 - July 2008',
+    title: 'Project Manager',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
+      'Led project teams and ensured timely delivery of projects. Coordinated with stakeholders to define project scope and objectives.',
+    year: '2004 - 2008',
   },
   {
-    pretitle: 'December 2000 - May 2004',
-    title: 'CM Development Solutions',
+    pretitle: 'August 2008 - April 2012',
+    title: 'Quality Assurance Analyst',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur doloremque corporis exercitationem quisquam dolore.',
+      'Performed comprehensive testing and quality assurance measures for software products. Identified and resolved defects to improve product reliability.',
+    year: '2008 - 2012',
   },
 ];
 
