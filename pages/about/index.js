@@ -89,7 +89,7 @@ const About = () => {
             </div>
             <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-b border-white/10'>
               <div className='text-3xl xl:text-6xl font-bold mb-2'>
-                <CountUp start={0} end={250} duration={8} />+
+                <CountUp start={0} end={250} duration={4} />+
               </div>
               <p className='uppercase text-xs xl:text-[13px] tracking-widest max-w-[100px] xl:max-w-none'>
                 Happy clients
@@ -97,7 +97,7 @@ const About = () => {
             </div>
             <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-r border-white/10'>
               <div className='text-3xl xl:text-6xl font-bold mb-2'>
-                <CountUp start={0} end={650} duration={10} />+
+                <CountUp start={0} end={650} duration={4} />+
               </div>
               <p className='uppercase text-xs xl:text-[13px] tracking-widest max-w-[100px] xl:max-w-none'>
                 Projects done

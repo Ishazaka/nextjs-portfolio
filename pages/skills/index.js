@@ -52,7 +52,7 @@ const skillData = [
 ];
 
 // motion
-import { motion, stagger } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 // variants
 import { fadeIn } from '../../variants';
