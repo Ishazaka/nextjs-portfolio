@@ -35,18 +35,17 @@ const About = () => {
         />
       </motion.div>
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
-        {/* left */}
-        <div className='flex-1 xl:pt-12 flex flex-col justify-center'>
-          <motion.h1
+        <div className='flex-1 flex flex-col justify-center'>
+          <motion.h2
             variants={fadeIn('down', 0.2)}
             initial='hidden'
             animate={'show'}
             exit={'hidden'}
-            className='h1'
+            className='h2'
           >
             Captivating <span className='text-accent'>stories</span> birth
             magnificent designs.
-          </motion.h1>
+          </motion.h2>
           <motion.p
             variants={fadeIn('down', 0.4)}
             initial='hidden'
@@ -60,81 +59,53 @@ const About = () => {
             quiet confidence, curiosity, and a focus on continual improvement, I
             tackle development challenges one at a time.
           </motion.p>
+          {/* counts */}
           <motion.div
-            variants={fadeIn('down', 0.6)}
+            variants={fadeIn('up', 0.4)}
             initial='hidden'
             animate={'show'}
             exit={'hidden'}
-            className='hidden xl:flex'
           >
-            <ProjectsBtn />
+            <div className='flex xl:gap-x-6'>
+              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                <div className='text-2xl xl:text-[32px] font-extrabold text-accent mb-2'>
+                  <CountUp start={0} end={10} duration={8} />+
+                </div>
+                <div className='text-xs xl:text-[13px] uppercase'>
+                  Years of experience
+                </div>
+              </div>
+              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                <div className='text-2xl xl:text-[32px] font-extrabold text-accent mb-2'>
+                  <CountUp start={0} end={250} duration={4} />+
+                </div>
+                <div className='text-xs xl:text-[13px] uppercase'>
+                  Satisfied clients
+                </div>
+              </div>
+              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
+                <div className='text-2xl xl:text-[32px] font-extrabold text-accent mb-2'>
+                  <CountUp start={0} end={650} duration={4} />+
+                </div>
+                <div className='text-xs xl:text-[13px] uppercase'>
+                  Finished projects
+                </div>
+              </div>
+              <div className='relative flex-1'>
+                <div className='text-2xl xl:text-[32px] font-extrabold text-accent mb-2'>
+                  <CountUp start={0} end={8} duration={10} />
+                </div>
+                <div className='text-xs xl:text-[13px] uppercase'>
+                  Winning Awards
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
-        {/* right */}
-        <motion.div
-          variants={fadeIn('up', 0.4)}
-          initial='hidden'
-          animate={'show'}
-          exit={'hidden'}
-          className='flex-1 xl:flex-none xl:w-[45%] flex flex-col justify-center items-center xl:p-[50px] relative'
-        >
-          <div className='flex flex-wrap w-full px-6 xl:px-0'>
-            <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-b border-r border-white/10'>
-              <div className='text-3xl xl:text-6xl font-bold mb-2'>
-                <CountUp start={0} end={11} duration={8} />+
-              </div>
-              <p className='uppercase text-xs xl:text-[13px] tracking-widest max-w-[100px] xl:max-w-none'>
-                Years of experience
-              </p>
-            </div>
-            <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-b border-white/10'>
-              <div className='text-3xl xl:text-6xl font-bold mb-2'>
-                <CountUp start={0} end={250} duration={4} />+
-              </div>
-              <p className='uppercase text-xs xl:text-[13px] tracking-widest max-w-[100px] xl:max-w-none'>
-                Happy clients
-              </p>
-            </div>
-            <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center border-r border-white/10'>
-              <div className='text-3xl xl:text-6xl font-bold mb-2'>
-                <CountUp start={0} end={650} duration={4} />+
-              </div>
-              <p className='uppercase text-xs xl:text-[13px] tracking-widest max-w-[100px] xl:max-w-none'>
-                Projects done
-              </p>
-            </div>
-            <div className='w-[50%] h-[100px] xl:h-[240px] flex flex-col justify-center items-center'>
-              <div className='text-3xl xl:text-6xl font-bold mb-2'>
-                <CountUp start={0} end={8} duration={10} />
-              </div>
-              <p className='uppercase text-xs xl:text-[13px] tracking-widest max-w-[100px] xl:max-w-none'>
-                Awards
-              </p>
-            </div>
-          </div>
-        </motion.div>
+        <div className='flex-1 w-full'>2</div>
       </div>
     </div>
   );
 };
 
 export default About;
-
-{
-  /* <div>
-<div className='mb-2 text-accent'>
-  <CountUp start={0} end={10} duration={8} />+
-</div>
-<div className='text-sm uppercase w-[160px] font-normal'>
-  Years of experience
-</div>
-</div>
-<div>
-<div className='mb-2 text-accent'>
-  <CountUp start={0} end={120} duration={4} />+
-</div>
-<div className='text-sm uppercase w-[160px] font-normal leading-normal'>
-  Projects completed in 20 countries
-</div>
-</div> */
-}

@@ -83,7 +83,7 @@ const Resume = () => {
           className='px-4 xl:px-0'
         >
           {/* top */}
-          <div className='hidden xl:flex w-full max-w-3xl mx-auto border-b border-white/10 pb-3'>
+          <div className='hidden xl:flex w-full mx-auto border-b border-white/10 pb-3'>
             <div className='flex-1 flex justify-between px-24'>
               <div className='flex flex-col items-center'>
                 <HiAcademicCap className='text-5xl m-2' />
@@ -99,7 +99,7 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          <div className='max-w-4xl mx-auto flex flex-col xl:flex-row justify-between h-[50vh] xl:h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-white/10 pr-2'>
+          <div className='mx-auto flex flex-col xl:flex-row justify-between h-[50vh] xl:h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-white/10 pr-2'>
             {/* education */}
             <div className='relative flex-1 xl:after:w-[1px] after:h-[760px] after:absolute after:bg-white/10 after:top-0 after:right-0 after:bottom-0 after:z-0'>
               <div className='p-4'>
