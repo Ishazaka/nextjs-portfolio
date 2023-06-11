@@ -208,7 +208,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className='py-6 flex flex-col gap-y-4'>
+          <div className='py-6 flex flex-col gap-y-6'>
             {aboutData[index].info.map((item, itemIndex) => (
               <div
                 className='flex-1 flex max-w-max gap-x-4 items-center text-white/60'
@@ -219,7 +219,7 @@ const About = () => {
                 <div className='flex gap-x-4'>
                   {item.icons?.map((icon) => {
                     return (
-                      <div className='text-2xl hover:text-white transition-all duration-300'>
+                      <div className='text-2xl text-white transition-all duration-300'>
                         {icon}
                       </div>
                     );
