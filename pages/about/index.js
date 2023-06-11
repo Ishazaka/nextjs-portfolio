@@ -55,6 +55,19 @@ const aboutData = [
     ],
   },
   {
+    title: 'awards',
+    info: [
+      {
+        title: 'awards',
+        stage: 'stage',
+      },
+      {
+        title: 'awards',
+        stage: 'stage',
+      },
+    ],
+  },
+  {
     title: 'experience',
     info: [
       {
@@ -76,19 +89,6 @@ const aboutData = [
       },
       {
         title: 'education & certification',
-        stage: 'stage',
-      },
-    ],
-  },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'awards',
-        stage: 'stage',
-      },
-      {
-        title: 'awards',
         stage: 'stage',
       },
     ],
@@ -219,7 +219,7 @@ const About = () => {
                 <div className='flex gap-x-4'>
                   {item.icons?.map((icon) => {
                     return (
-                      <div className='text-2xl text-white transition-all duration-300'>
+                      <div className='text-2xl text-white transition-all duration-500'>
                         {icon}
                       </div>
                     );
