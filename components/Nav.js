@@ -1,5 +1,7 @@
 // link
 import Link from 'next/link';
+
+// router
 import { useRouter } from 'next/router';
 
 // icons
@@ -35,7 +37,6 @@ const links = [
 const Nav = () => {
   const router = useRouter();
   const pathname = router.pathname;
-  console.log(pathname);
 
   return (
     // nav
