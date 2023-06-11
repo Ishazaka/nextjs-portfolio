@@ -18,9 +18,7 @@ import {
 const links = [
   { name: 'home', path: '/', icn: <HiHome /> },
   { name: 'about', path: '/about', icn: <HiUser /> },
-  { name: 'resume', path: '/resume', icn: <HiBriefcase /> },
   { name: 'services', path: '/services', icn: <HiRectangleGroup /> },
-  { name: 'skills', path: '/skills', icn: <HiSwatch /> },
   { name: 'work', path: '/work', icn: <HiViewColumns /> },
   {
     name: 'testimonials',
@@ -43,7 +41,7 @@ const Nav = () => {
     // nav
     <nav className='flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen'>
       {/* nav inner */}
-      <div className='flex flex-row w-full xl:flex-col items-center justify-between xl:justify-center gap-y-6 px-4 md:px-40  xl:px-0 h-[80px] xl:h-max py-4 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl text-white xl:rounded-full'>
+      <div className='flex flex-row w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40  xl:px-0 h-[80px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl text-white xl:rounded-full'>
         {links.map((link, index) => {
           return (
             <Link

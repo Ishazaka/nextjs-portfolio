@@ -97,7 +97,7 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  console.log(index);
+
   return (
     <div className='h-full bg-primary py-32 text-white text-center xl:text-left'>
       <TopLeftImg />
@@ -121,7 +121,7 @@ const About = () => {
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         <div className='flex-1 flex flex-col justify-center'>
           <motion.h2
-            variants={fadeIn('down', 0.2)}
+            variants={fadeIn('right', 0.2)}
             initial='hidden'
             animate={'show'}
             exit={'hidden'}
@@ -131,21 +131,19 @@ const About = () => {
             magnificent designs.
           </motion.h2>
           <motion.p
-            variants={fadeIn('down', 0.4)}
+            variants={fadeIn('right', 0.4)}
             initial='hidden'
             animate={'show'}
             exit={'hidden'}
-            className='max-w-[700px] mx-auto xl:mx-0 mb-4 xl:mb-12 px-2 xl:px-0'
+            className='max-w-[500px] mx-auto xl:mx-0 mb-4 xl:mb-12 px-2 xl:px-0'
           >
             10 years ago, I began freelancing as a developer. Since then, I've
             done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use. With
-            quiet confidence, curiosity, and a focus on continual improvement, I
-            tackle development challenges one at a time.
+            collaborated on digital products for business and consumer use.
           </motion.p>
           {/* counters */}
           <motion.div
-            variants={fadeIn('up', 0.4)}
+            variants={fadeIn('right', 0.6)}
             initial='hidden'
             animate={'show'}
             exit={'hidden'}
@@ -187,15 +185,21 @@ const About = () => {
             </div>
           </motion.div>
         </div>
-        <div className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
-          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0'>
+        <motion.div
+          variants={fadeIn('left', 0.4)}
+          initial='hidden'
+          animate={'show'}
+          exit={'hidden'}
+          className='flex flex-col w-full xl:max-w-[48%] h-[480px]'
+        >
+          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-2'>
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
                   className={`${
                     index === itemIndex &&
                     'text-accent border-b-2 border-accent'
-                  } cursor-pointer capitalize text-lg`}
+                  } cursor-pointer capitalize xl:text-lg`}
                   onClick={() => setIndex(itemIndex)}
                   index={itemIndex}
                 >
@@ -215,7 +219,7 @@ const About = () => {
                 <div className='flex gap-x-4'>
                   {item.icons?.map((icon) => {
                     return (
-                      <div className='text-2xl hover:text-accent transition-all duration-300'>
+                      <div className='text-2xl hover:text-white transition-all duration-300'>
                         {icon}
                       </div>
                     );
@@ -224,7 +228,7 @@ const About = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
