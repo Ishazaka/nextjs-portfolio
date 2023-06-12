@@ -13,27 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <AnimatePresence mode='wait'>
-        <motion.div
-          key={router.route}
-          className='h-full'
-          // initial='initial'
-          // animate='animate'
-          // exit='exit'
-          // variants={{
-          //   initial: {
-          //     opacity: 0,
-          //     clipPath: 'polygon(0 0, 0% 0, 0% 100%, 0% 100%)',
-          //   },
-          //   animate: {
-          //     opacity: 1,
-          //     clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
-          //   },
-          //   exit: {
-          //     clipPath: 'polygon(0 0, 0% 0, 0% 100%, 0% 100%)',
-          //   },
-          // }}
-          // transition={{ duration: 0.7, delay: 0.5 }}
-        >
+        <motion.div key={router.route} className='h-full'>
           <Transition />
           <Component {...pageProps} />
         </motion.div>
