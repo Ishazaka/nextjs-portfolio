@@ -55,7 +55,7 @@ const serviceData = [
 
 const Services = () => {
   return (
-    <div className='h-full bg-primary py-36  text-white'>
+    <div className='h-full bg-primary py-36 text-white'>
       <TopLeftImg />
       <BottomRightImg />
       <div className='container mx-auto flex items-center justify-between'>
