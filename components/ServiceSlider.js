@@ -1,18 +1,17 @@
-import React from 'react';
-
 // icons
-import { IoCubeOutline, IoLogoTableau } from 'react-icons/io5';
+import { IoCubeOutline, IoLogoTableau, IoArrowUp } from 'react-icons/io5';
 
-// components
-import TopLeftImg from '../../components/TopLeftImg';
-import BottomRightImg from '../../components/BottomRightImg';
+// import swiper react components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-// import motion
-import { motion } from 'framer-motion';
+// import swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-// import variants
-import { fadeIn } from '../../variants';
-import ServiceSlider from '../../components/ServiceSlider';
+// import '../../styles.css';
+
+// import required modules
+import { Pagination } from 'swiper';
 
 const serviceData = [
   {
@@ -53,26 +52,34 @@ const serviceData = [
   },
 ];
 
-const Services = () => {
+const ServiceSlider = () => {
   return (
-    <div className='h-full bg-primary py-36  text-white'>
-      <TopLeftImg />
-      <BottomRightImg />
-      <div className='container mx-auto flex items-center justify-between'>
-        <motion.h2
-          variants={fadeIn('up', 0.2)}
-          initial={'hidden'}
-          animate={'show'}
-          exit={'hidden'}
-          className='h2 mb-8 text-center xl:text-left'
-        >
-          My services<span className='text-accent'>.</span>
-        </motion.h2>
-        <div>View all services</div>
-      </div>
-      <ServiceSlider />
-    </div>
+    <>
+      <Swiper
+        slidesPerView={4}
+        spaceBetween={30}
+        centeredSlides={true}
+        slidesOffsetBefore={-230}
+        modules={[Pagination]}
+        className='mySwiper'
+      >
+        {serviceData.map((service, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <div className='bg-gray-800 h-[540px] flex flex-col justify-center items-center'>
+                <div className='-rotate-90 text-2xl max-w-[14rem]'>
+                  {service.title}
+                </div>
+                <div className='bg-blue-50/40 mt-24 text-4xl'>
+                  <IoArrowUp />
+                </div>
+              </div>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </>
   );
 };
 
-export default Services;
+export default ServiceSlider;
