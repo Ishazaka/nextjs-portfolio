@@ -59,16 +59,18 @@ const Services = () => {
       <TopLeftImg />
       <BottomRightImg />
       <div className='container mx-auto flex items-center justify-between'>
-        <motion.h2
-          variants={fadeIn('up', 0.2)}
-          initial={'hidden'}
-          animate={'show'}
-          exit={'hidden'}
-          className='h2 mb-8 text-center xl:text-left'
-        >
-          My services<span className='text-accent'>.</span>
-        </motion.h2>
-        <div>View all services</div>
+        <div className='flex flex-col xl:flex-row items-center justify-between w-full mb-12'>
+          <motion.h2
+            variants={fadeIn('up', 0.2)}
+            initial={'hidden'}
+            animate={'show'}
+            exit={'hidden'}
+            className='h2 text-center xl:text-left'
+          >
+            My services<span className='text-accent'>.</span>
+          </motion.h2>
+          <div>View all services</div>
+        </div>
       </div>
       <ServiceSlider />
     </div>

@@ -13,6 +13,8 @@ import 'swiper/css/pagination';
 // import required modules
 import { Pagination } from 'swiper';
 
+import { HiMap } from 'react-icons/hi';
+
 const serviceData = [
   {
     title: 'Brand Strategy & Art Direction',
@@ -51,25 +53,42 @@ const ServiceSlider = () => {
     <>
       <Swiper
         slidesPerView={4}
-        // spaceBetween={30}
+        spaceBetween={30}
         centeredSlides={true}
-        slidesOffsetBefore={-230}
         modules={[Pagination]}
-        className=''
+        className='mySwiper'
+        breakpoints={{
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            slidesOffsetBefore: 0,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesOffsetBefore: -230,
+          },
+        }}
       >
         {serviceData.map((service, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className='border border-white/10 h-[540px] p-5 group relative'>
-                <div className='flex flex-col justify-center items-center h-full pt-12'>
-                  <div className='-rotate-90 text-[22px] max-w-[13rem] mb-[110px] leading-tight'>
+              <div className='bg-[#1c1d2f] h-[540px] p-10 group relative'>
+                <div className='flex flex-col justify-center items-center h-full relative'>
+                  <div>
+                    <HiMap className='text-5xl mb-4 text-accent' />
+                  </div>
+                  <div className='text-center text-2xl max-w-[16rem] mb-4'>
                     {service.title}
                   </div>
-                  <div className='text-4xl group-hover:rotate-45 transition-all duration-300'>
+                  <p className='mb-16 text-center'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laborum, accusamus.
+                  </p>
+                  <div className='text-4xl group-hover:rotate-45 transition-all duration-300 cursor-pointer'>
                     <HiArrowUpRight />
                   </div>
                 </div>
-                <div className='w-5 h-5 bg-accent absolute bottom-0 left-0'></div>
               </div>
             </SwiperSlide>
           );
