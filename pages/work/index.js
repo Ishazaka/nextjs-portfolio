@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import TopLeftImg from '../../components/TopLeftImg';
 import BottomRightImg from '../../components/BottomRightImg';
+import WorkSlider from '../../components/WorkSlider';
 
 const projectData = [
   {
@@ -41,26 +42,8 @@ const Work = () => {
             sunt ipsum maiores eius, unde minima omnis provident repudiandae.
           </p>
         </div>
-        {/* project grid */}
-        <div className='flex flex-wrap max-w-2xl gap-6 justify-center xl:justify-end mx-auto xl:mx-0'>
-          {projectData.map((project, index) => {
-            return (
-              <div key={index} className='relative'>
-                <div className='rounded-2xl overflow-hidden mb-2 max-w-[168px] xl:max-w-none'>
-                  {/* overlay */}
-                  <div className='bg-primary/30 absolute w-full h-full'></div>
-                  <Image src={project.img} width={300} height={300} alt='' />
-                </div>
-                <div className='absolute bottom-6 left-4'>
-                  <div className='text-base mb-1'>{project.title}</div>
-                  <div className='text-[12px] uppercase tracking-widest'>
-                    {project.type}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        {/* projects */}
+        <WorkSlider />
       </div>
     </div>
   );

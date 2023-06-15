@@ -14,45 +14,6 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 import ServiceSlider from '../../components/ServiceSlider';
 
-const serviceData = [
-  {
-    icon: <IoCubeOutline />,
-    title: 'Brand Strategy & Art Direction',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ipsum excepturi magnam',
-  },
-  {
-    icon: <IoLogoTableau />,
-    title: 'User Interface Design',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ipsum excepturi magnam',
-  },
-  {
-    icon: <IoCubeOutline />,
-    title: 'User Experience Design',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ipsum excepturi magnam',
-  },
-  {
-    icon: <IoLogoTableau />,
-    title: 'Frontend Development',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ipsum excepturi magnam',
-  },
-  {
-    icon: <IoCubeOutline />,
-    title: 'Backend Development',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ipsum excepturi magnam',
-  },
-  {
-    icon: <IoLogoTableau />,
-    title: 'SEO And Copywriting',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ipsum excepturi magnam',
-  },
-];
-
 const Services = () => {
   return (
     <div className='h-full bg-primary py-36 text-white'>
@@ -69,10 +30,24 @@ const Services = () => {
           >
             My services<span className='text-accent'>.</span>
           </motion.h2>
-          <div>View all services</div>
+          <motion.div
+            variants={fadeIn('up', 0.3)}
+            initial={'hidden'}
+            animate={'show'}
+            exit={'hidden'}
+          >
+            View all services
+          </motion.div>
         </div>
       </div>
-      <ServiceSlider />
+      <motion.div
+        variants={fadeIn('up', 0.4)}
+        initial={'hidden'}
+        animate={'show'}
+        exit={'hidden'}
+      >
+        <ServiceSlider />
+      </motion.div>
     </div>
   );
 };
