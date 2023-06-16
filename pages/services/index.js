@@ -1,7 +1,7 @@
 import React from 'react';
 
-// icons
-import { IoCubeOutline, IoLogoTableau } from 'react-icons/io5';
+// next image
+import Image from 'next/image';
 
 // components
 import TopLeftImg from '../../components/TopLeftImg';
@@ -41,6 +41,10 @@ const Services = () => {
             <ServiceSlider />
           </div>
         </div>
+      </div>
+      {/* bulb */}
+      <div className='absolute -left-32 -bottom-12 rotate-12 mix-blend-color-dodge duration-75  animate-pulse'>
+        <Image src={'/bulb.png'} width={270} height={200} />
       </div>
     </div>
   );
