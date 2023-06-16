@@ -21,7 +21,7 @@ const Services = () => {
       <BottomRightImg />
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
-          <div className='flex xl:w-[30vw] flex-col text-center sm:text-left mb-4'>
+          <div className='flex xl:w-[30vw] flex-col text-center lg:text-left mb-4'>
             <motion.h2
               variants={fadeIn('up', 0.2)}
               initial={'hidden'}
@@ -31,7 +31,7 @@ const Services = () => {
             >
               My services<span className='text-accent'>.</span>
             </motion.h2>
-            <motion.p className='mb-4 max-w-xl'>
+            <motion.p className='mb-4 max-w-xl mx-auto lg:mx-0'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
               minima quae fuga ipsum voluptatem adipisci aut corporis dolore
               quibusdam assumenda.
