@@ -33,7 +33,7 @@ const Work = () => {
       <TopLeftImg />
       <BottomRightImg />
       <div className='container mx-auto flex flex-col xl:flex-row justify-between'>
-        <div className='text-center xl:text-left mb-8 xl:mb-0'>
+        <div className='w-[70%] mx-auto xl:mx-0  text-center xl:text-left mb-8 xl:mb-0'>
           <h1 className='h1'>
             My <span className='text-accent'>work.</span>
           </h1>

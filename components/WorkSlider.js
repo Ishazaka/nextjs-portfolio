@@ -25,8 +25,13 @@ const WorkSlider = () => {
         pagination={{
           clickable: true,
         }}
+        breakpoints={{
+          320: {
+            grid: 1,
+          },
+        }}
         modules={[Grid, Pagination]}
-        className='workSlider'
+        className='workSlider mx-0'
       >
         <SwiperSlide className=''>Slide 1</SwiperSlide>
         <SwiperSlide className=''>Slide 2</SwiperSlide>
