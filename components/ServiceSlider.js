@@ -7,29 +7,42 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
-// import './styles.css';
+import {
+  RxCrop,
+  RxDesktop,
+  RxPencil2,
+  RxReader,
+  RxRocket,
+} from 'react-icons/rx';
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper';
 
 const serviceData = [
   {
-    title: 'service 1',
+    icon: <RxCrop />,
+    title: 'Branding',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    title: 'service 2',
+    icon: <RxPencil2 />,
+    title: 'Design',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    title: 'service 3',
+    icon: <RxDesktop />,
+    title: 'Development',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    title: 'service 4',
+    icon: <RxReader />,
+    title: 'Copywriting',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    title: 'service 5',
-  },
-  {
-    title: 'service 6',
+    icon: <RxRocket />,
+    title: 'SEO',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
 ];
 
@@ -39,6 +52,7 @@ const ServiceSlider = () => {
       breakpoints={{
         320: {
           slidesPerView: 1,
+          spaceBetween: 15,
         },
         640: {
           slidesPerView: 3,
@@ -50,13 +64,17 @@ const ServiceSlider = () => {
         clickable: true,
       }}
       modules={[FreeMode, Pagination]}
-      className='w-full'
     >
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='bg-yellow-200/10 h-[200px] xl:h-[300px]'>
-              {item.title}
+            <div className='bg-[#1c1d2c] h-max xl:h-[300px] rounded-lg p-6'>
+              {/* icon */}
+              <div className='text-4xl text-accent mb-4'>{item.icon}</div>
+              {/* title */}
+              <div className='mb-2 text-lg'>{item.title}</div>
+              {/* description */}
+              <p>{item.description}</p>
             </div>
           </SwiperSlide>
         );
@@ -64,5 +82,5 @@ const ServiceSlider = () => {
     </Swiper>
   );
 };
-
+// bg-[#1b1c2d]
 export default ServiceSlider;
