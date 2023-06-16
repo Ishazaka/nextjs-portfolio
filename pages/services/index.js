@@ -36,15 +36,6 @@ const Services = () => {
               minima quae fuga ipsum voluptatem adipisci aut corporis dolore
               quibusdam assumenda.
             </motion.p>
-            <motion.div
-              className='mb-12 xl:mb-4'
-              variants={fadeIn('up', 0.3)}
-              initial={'hidden'}
-              animate={'show'}
-              exit={'hidden'}
-            >
-              View all services
-            </motion.div>
           </div>
           <div className='w-full xl:max-w-[60%]'>
             <ServiceSlider />

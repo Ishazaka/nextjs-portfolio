@@ -68,13 +68,15 @@ const ServiceSlider = () => {
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='bg-[#1c1d2c] h-max xl:h-[300px] rounded-lg p-6'>
+            <div className='bg-[#1c1d2c] h-max xl:h-[300px] rounded-lg p-6 flex sm:flex-col gap-x-6 sm:gap-x-0'>
               {/* icon */}
               <div className='text-4xl text-accent mb-4'>{item.icon}</div>
-              {/* title */}
-              <div className='mb-2 text-lg'>{item.title}</div>
-              {/* description */}
-              <p>{item.description}</p>
+              <div>
+                {/* title */}
+                <div className='mb-2 text-lg'>{item.title}</div>
+                {/* description */}
+                <p className='max-w-[350px]'>{item.description}</p>
+              </div>
             </div>
           </SwiperSlide>
         );
