@@ -64,7 +64,7 @@ const WorkSlider = () => {
       slidesPerColumn={2}
       navigation
       pagination={{ clickable: true }}
-      className='h-[340px] sm:h-[480px]'
+      className='h-[280px] sm:h-[480px]'
       modules={[Pagination]}
     >
       {workSlides.slides.map((slide) => {
