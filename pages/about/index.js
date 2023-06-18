@@ -107,7 +107,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className='h-full bg-primary py-32 text-white text-center xl:text-left'>
+    <div className='h-full bg-primary/30 py-32 text-white text-center xl:text-left'>
       <TopLeftImg />
       <BottomRightImg />
       {/* avatar img */}
@@ -206,8 +206,8 @@ const About = () => {
                 <div
                   className={`${
                     index === itemIndex &&
-                    'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
-                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white/70 after:absolute after:-bottom-1 after:left-0`}
+                    'text-accent after:w-[100%] after:bg-accent/90 after:transition-all after:duration-300'
+                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                   index={itemIndex}
                 >

@@ -64,7 +64,7 @@ const WorkSlider = () => {
       slidesPerColumn={2}
       navigation
       pagination={{ clickable: true }}
-      className='mySwiper'
+      className='h-[340px] sm:h-[480px]'
       modules={[Pagination]}
     >
       {workSlides.slides.map((slide) => {
@@ -74,7 +74,7 @@ const WorkSlider = () => {
               {slide.images.map((image) => {
                 return (
                   <div className='relative rounded-lg overflow-hidden'>
-                    <div className='absolute top-0 left-0 w-full h-full bg-primary/30 z-20'></div>
+                    <div className='absolute top-0 left-0 w-full h-full z-20'></div>
                     <Image src={image.path} width={500} height={300} alt='' />
                   </div>
                 );

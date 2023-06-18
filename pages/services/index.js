@@ -16,7 +16,7 @@ import { fadeIn } from '../../variants';
 
 const Services = () => {
   return (
-    <div className='h-full bg-primary py-36 text-white flex items-center'>
+    <div className='h-full bg-primary/30 py-36 text-white flex items-center'>
       <TopLeftImg />
       <BottomRightImg />
       <div className='container mx-auto'>

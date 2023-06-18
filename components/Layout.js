@@ -13,7 +13,9 @@ const sora = Sora({
 
 const Layout = ({ children }) => {
   return (
-    <div className={`page ${sora.variable} font-sora relative`}>
+    <div
+      className={`page bg-site bg-cover bg-no-repeat bg-blend-color-dodge ${sora.variable} font-sora relative`}
+    >
       <Nav />
       <Header />
       {children}

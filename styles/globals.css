@@ -25,6 +25,6 @@
     @apply text-[35px] leading-tight md:text-[54px] md:leading-[1.3] mb-4 font-semibold;
   }
   p {
-    @apply leading-[1.8] text-white/70 font-light;
+    @apply leading-[1.8] text-white/60 font-light;
   }
 }
