@@ -76,6 +76,10 @@ const WorkSlider = () => {
                   <div className='relative rounded-lg overflow-hidden'>
                     <div className='absolute top-0 left-0 w-full h-full z-20'></div>
                     <Image src={image.path} width={500} height={300} alt='' />
+                    {/* circle */}
+                    <div className='absolute z-30 top-12 left-12 bg-red-500'>
+                      circle
+                    </div>
                   </div>
                 );
               })}
