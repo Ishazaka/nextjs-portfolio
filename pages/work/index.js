@@ -27,7 +27,7 @@ const Work = () => {
               initial={'hidden'}
               animate={'show'}
               exit={'hidden'}
-              className='h2 xl:mt-8'
+              className='h2 xl:mt-12'
             >
               My work<span className='text-accent'>.</span>
             </motion.h2>
@@ -55,7 +55,7 @@ const Work = () => {
       </div>
       {/* bulb */}
       <div className='absolute -left-36 -bottom-12 rotate-12 mix-blend-color-dodge duration-75 animate-pulse'>
-        <Image src={'/bulb.png'} width={260} height={200} />
+        <Image src={'/bulb.png'} width={260} height={200} alt='' />
       </div>
     </div>
   );
