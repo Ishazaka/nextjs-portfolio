@@ -42,7 +42,7 @@ const Home = () => {
             adipisci, maiores atque deleniti voluptatibus optio.
           </motion.p>
           {/* btn */}
-          <div className='flex justify-center relative z-50 xl:hidden'>
+          <div className='flex justify-center relative xl:hidden'>
             <ProjectsBtn />
           </div>
           <motion.div
