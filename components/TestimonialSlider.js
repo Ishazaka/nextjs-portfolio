@@ -32,29 +32,30 @@ const testimonialData = [
 
 const TestimonialSlider = () => {
   return (
-    <>
-      <Swiper navigation={true} modules={[Navigation]} className=''>
-        {testimonialData.map((item, index) => {
-          return (
-            <SwiperSlide className='' key={index}>
-              <div className='flex flex-col md:flex-row'>
-                {/* avtar image */}
-                <div className='flex-1 flex justify-center items-center'>
-                  <div className='w-[120px] h-[120px] bg-pink-50 rounded-full'></div>
-                </div>
-                {/* quote & message */}
-                <div className='flex-1'>
-                  <div className='mb-4'>
-                    <FaQuoteLeft className='text-6xl text-white/20' />
-                  </div>
-                  <div className='text-xl text-left'>{item.message}</div>
-                </div>
+    <Swiper navigation={true} modules={[Navigation]} className='h-[400px]'>
+      {testimonialData.map((person, index) => {
+        return (
+          <SwiperSlide className='bg-pink-50/10' key={index}>
+            <div className='flex flex-col md:flex-row gap-x-12 bg-green-200/10 h-full px-16'>
+              {/* avatar, name, position */}
+              <div className='w-full max-w-[300px] flex justify-center items-center relative'>
+                {/* avatar */}
+                <div className='w-[120px] h-[120px] bg-pink-50/10 rounded-full'></div>
+                {/* name */}
+                <div>{person.name}</div>
               </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </>
+              {/* quote & message */}
+              <div className='flex-1 flex flex-col justify-center before:w-[1px] before:bg-red-500 before:absolute before:left-0 before:h-[260px] relative'>
+                <div className='mb-4'>
+                  <FaQuoteLeft className='text-6xl text-white/20' />
+                </div>
+                <div className='text-xl text-left'>{person.message}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
   );
 };
 
