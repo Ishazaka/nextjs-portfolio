@@ -46,9 +46,7 @@ const Services = () => {
         </div>
       </div>
       {/* bulb */}
-      <div className='absolute -left-36 -bottom-12 rotate-12 mix-blend-color-dodge duration-75 animate-pulse z-10'>
-        <Bulb />
-      </div>
+      <Bulb />
     </div>
   );
 };

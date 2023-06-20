@@ -1,12 +1,12 @@
 // components
 import WorkSlider from '../../components/WorkSlider';
-import Bulb from '../../components/Bulb';
 
 // import motion
 import { motion } from 'framer-motion';
 
 // import variants
 import { fadeIn } from '../../variants';
+import Circles from '../../components/Circles';
 
 const Work = () => {
   return (
@@ -48,9 +48,7 @@ const Work = () => {
         </div>
       </div>
       {/* bulb */}
-      <div className='absolute -left-36 -bottom-12 rotate-12 mix-blend-color-dodge duration-75 animate-pulse z-10'>
-        <Bulb />
-      </div>
+      <Circles />
     </div>
   );
 };
