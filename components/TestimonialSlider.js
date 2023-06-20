@@ -35,21 +35,21 @@ const TestimonialSlider = () => {
     <Swiper navigation={true} modules={[Navigation]} className='h-[400px]'>
       {testimonialData.map((person, index) => {
         return (
-          <SwiperSlide className='bg-pink-50/10' key={index}>
-            <div className='flex flex-col md:flex-row gap-x-12 bg-green-200/10 h-full px-16'>
+          <SwiperSlide key={index}>
+            <div className='flex flex-col md:flex-row gap-x-12 h-full px-16'>
               {/* avatar, name, position */}
-              <div className='w-full max-w-[300px] flex justify-center items-center relative'>
+              <div className='w-full max-w-[300px] flex xl:justify-center items-center relative'>
                 {/* avatar */}
                 <div className='w-[120px] h-[120px] bg-pink-50/10 rounded-full'></div>
                 {/* name */}
                 <div>{person.name}</div>
               </div>
               {/* quote & message */}
-              <div className='flex-1 flex flex-col justify-center before:w-[1px] before:bg-white/50 before:absolute before:left-0 before:h-[260px] relative pl-12'>
+              <div className='flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/50 xl:before:absolute xl:before:left-0 xl:before:h-[260px] relative xl:pl-12'>
                 <div className='mb-4'>
-                  <FaQuoteLeft className='text-6xl text-white/20' />
+                  <FaQuoteLeft className='text-4xl xl:text-6xl text-white/20' />
                 </div>
-                <div className='text-xl text-left'>{person.message}</div>
+                <div className='xl:text-xl text-left'>{person.message}</div>
               </div>
             </div>
           </SwiperSlide>
