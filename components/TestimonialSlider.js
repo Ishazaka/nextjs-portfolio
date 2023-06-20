@@ -5,9 +5,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // import required modules
-import { Navigation } from 'swiper';
+import { Navigation, Pagination } from 'swiper';
 
 // import icons
 import { FaQuoteLeft } from 'react-icons/fa';
@@ -32,7 +33,12 @@ const testimonialData = [
 
 const TestimonialSlider = () => {
   return (
-    <Swiper navigation={true} modules={[Navigation]} className='h-[400px]'>
+    <Swiper
+      navigation={true}
+      modules={[Navigation, Pagination]}
+      pagination={{ clickable: true }}
+      className='h-[400px]'
+    >
       {testimonialData.map((person, index) => {
         return (
           <SwiperSlide key={index}>
