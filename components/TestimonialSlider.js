@@ -45,7 +45,7 @@ const TestimonialSlider = () => {
                 <div>{person.name}</div>
               </div>
               {/* quote & message */}
-              <div className='flex-1 flex flex-col justify-center before:w-[1px] before:bg-red-500 before:absolute before:left-0 before:h-[260px] relative pl-12'>
+              <div className='flex-1 flex flex-col justify-center before:w-[1px] before:bg-white/50 before:absolute before:left-0 before:h-[260px] relative pl-12'>
                 <div className='mb-4'>
                   <FaQuoteLeft className='text-6xl text-white/20' />
                 </div>

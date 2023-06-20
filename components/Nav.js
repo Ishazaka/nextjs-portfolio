@@ -8,29 +8,27 @@ import { useRouter } from 'next/router';
 import {
   HiHome,
   HiUser,
-  HiBriefcase,
   HiViewColumns,
   HiRectangleGroup,
-  HiSwatch,
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from 'react-icons/hi2';
 
 // nav links
 const links = [
-  { name: 'home', path: '/', icn: <HiHome /> },
-  { name: 'about', path: '/about', icn: <HiUser /> },
-  { name: 'services', path: '/services', icn: <HiRectangleGroup /> },
-  { name: 'work', path: '/work', icn: <HiViewColumns /> },
+  { name: 'home', path: '/', icon: <HiHome /> },
+  { name: 'about', path: '/about', icon: <HiUser /> },
+  { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
+  { name: 'work', path: '/work', icon: <HiViewColumns /> },
   {
     name: 'testimonials',
     path: '/testimonials',
-    icn: <HiChatBubbleBottomCenterText />,
+    icon: <HiChatBubbleBottomCenterText />,
   },
   {
     name: 'contact',
     path: '/contact',
-    icn: <HiEnvelope />,
+    icon: <HiEnvelope />,
   },
 ];
 
@@ -61,7 +59,7 @@ const Nav = () => {
                   <div className='border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2'></div>
                 </div>
               </div>
-              <div>{link.icn}</div>
+              <div>{link.icon}</div>
             </Link>
           );
         })}

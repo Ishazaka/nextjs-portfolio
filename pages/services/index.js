@@ -4,8 +4,6 @@ import React from 'react';
 import Image from 'next/image';
 
 // components
-import TopLeftImg from '../../components/TopLeftImg';
-import BottomRightImg from '../../components/BottomRightImg';
 import ServiceSlider from '../../components/ServiceSlider';
 
 // import motion
@@ -17,8 +15,6 @@ import { fadeIn } from '../../variants';
 const Services = () => {
   return (
     <div className='h-full bg-primary/30 py-36 text-white flex items-center'>
-      <TopLeftImg />
-      <BottomRightImg />
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
           <div className='flex xl:w-[30vw] flex-col text-center lg:text-left mb-4 xl:mb-0'>

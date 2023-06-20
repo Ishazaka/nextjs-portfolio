@@ -1,11 +1,7 @@
-import React from 'react';
-
 // next image
 import Image from 'next/image';
 
 // components
-import TopLeftImg from '../../components/TopLeftImg';
-import BottomRightImg from '../../components/BottomRightImg';
 import WorkSlider from '../../components/WorkSlider';
 
 // import motion
@@ -17,10 +13,9 @@ import { fadeIn } from '../../variants';
 const Work = () => {
   return (
     <div className='h-full bg-primary/30 py-36 text-white flex items-center'>
-      <TopLeftImg />
-      <BottomRightImg />
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
+          {/* text */}
           <div className='flex flex-col text-center lg:text-left mb-4 xl:mb-0 pt-6'>
             <motion.h2
               variants={fadeIn('up', 0.2)}
@@ -42,8 +37,9 @@ const Work = () => {
               Reprehenderit maiores facere officiis labore ullam.
             </motion.p>
           </div>
+          {/* slider */}
           <motion.div
-            variants={fadeIn('down', 0.5)}
+            variants={fadeIn('up', 0.4)}
             initial={'hidden'}
             animate={'show'}
             exit={'hidden'}

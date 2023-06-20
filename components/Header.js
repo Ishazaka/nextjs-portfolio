@@ -18,6 +18,7 @@ const Header = () => {
               src={'/logo.svg'}
               width={220}
               height={48}
+              className='w-full h-full'
               alt=''
               priority={true}
             />

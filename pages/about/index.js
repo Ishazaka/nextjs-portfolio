@@ -10,10 +10,6 @@ import { fadeIn } from '../../variants';
 // react countup
 import CountUp from 'react-countup';
 
-// components
-import TopLeftImg from '../../components/TopLeftImg';
-import BottomRightImg from '../../components/BottomRightImg';
-
 // icons
 import {
   FaReact,
@@ -108,8 +104,6 @@ const About = () => {
 
   return (
     <div className='h-full bg-primary/30 py-32 text-white text-center xl:text-left'>
-      <TopLeftImg />
-      <BottomRightImg />
       {/* avatar img */}
       <motion.div
         variants={fadeIn('right', 0.2)}
@@ -209,7 +203,7 @@ const About = () => {
                     'text-accent after:w-[100%] after:bg-accent/90 after:transition-all after:duration-300'
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
-                  index={itemIndex}
+                  key={itemIndex}
                 >
                   {item.title}
                 </div>
