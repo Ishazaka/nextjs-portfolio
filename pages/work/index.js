@@ -1,12 +1,12 @@
 // components
 import WorkSlider from '../../components/WorkSlider';
+import Circles from '../../components/Circles';
 
 // import motion
 import { motion } from 'framer-motion';
 
 // import variants
 import { fadeIn } from '../../variants';
-import Circles from '../../components/Circles';
 
 const Work = () => {
   return (
@@ -47,7 +47,7 @@ const Work = () => {
           </motion.div>
         </div>
       </div>
-      {/* bulb */}
+      {/* circles */}
       <Circles />
     </div>
   );

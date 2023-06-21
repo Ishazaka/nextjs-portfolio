@@ -1,3 +1,6 @@
+import Circles from '/components/Circles';
+
+// icons
 import { BsArrowRight } from 'react-icons/bs';
 
 const Contact = () => {
@@ -28,6 +31,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      {/* circles */}
+      <Circles />
     </div>
   );
 };

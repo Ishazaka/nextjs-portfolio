@@ -1,5 +1,7 @@
 import TestimonialSlider from '../../components/TestimonialSlider';
 
+import Circles from '/components/Circles';
+
 const Testimonials = () => {
   return (
     <div className='h-full bg-primary/30 py-32 text-white text-center'>
@@ -10,6 +12,8 @@ const Testimonials = () => {
         <div>
           <TestimonialSlider />
         </div>
+        {/* circles */}
+        <Circles />
       </div>
     </div>
   );
