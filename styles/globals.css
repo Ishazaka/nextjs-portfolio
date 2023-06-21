@@ -34,4 +34,18 @@
   p {
     @apply leading-[1.8] text-white/60 font-light;
   }
+  .btn,
+  .input {
+    @apply h-[52px];
+  }
+  .input {
+    @apply w-full h-[52px] rounded-lg pl-4 capitalize;
+  }
+  .input,
+  .textarea {
+    @apply bg-transparent outline-none focus:ring-1 focus:ring-accent border border-white/10;
+  }
+  .textarea {
+    @apply w-full h-[180px] p-4 capitalize rounded-lg resize-none;
+  }
 }
