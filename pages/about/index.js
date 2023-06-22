@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 
-// next image
-import Image from 'next/image';
-
 // framer motion
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
 // react countup
 import CountUp from 'react-countup';
+
+// components
+import Avatar from '../../components/Avatar';
+import Circles from '../../components/Circles';
 
 // icons
 import {
@@ -26,7 +27,6 @@ import {
   SiAdobexd,
   SiAdobephotoshop,
 } from 'react-icons/si';
-import Avatar from '../../components/Avatar';
 
 // about data
 const aboutData = [
@@ -105,6 +105,8 @@ const About = () => {
 
   return (
     <div className='h-full bg-primary/30 py-32 text-white text-center xl:text-left'>
+      {/* circles */}
+      <Circles />
       {/* avatar img */}
       <motion.div
         variants={fadeIn('right', 0.2)}
