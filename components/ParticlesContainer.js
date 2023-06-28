@@ -3,19 +3,17 @@ import { loadFull } from 'tsparticles';
 import React, { useCallback } from 'react';
 
 const ParticlesContainer = () => {
+  //  init
   const particlesInit = useCallback(async (engine) => {
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   }, []);
 
   const particlesLoaded = useCallback(async () => {}, []);
+
   return (
     <Particles
-      id='tsparticles'
       className='w-full h-full absolute translate-z-0'
+      id='tsparticles'
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
@@ -50,10 +48,10 @@ const ParticlesContainer = () => {
         },
         particles: {
           color: {
-            value: '#E68E2E',
+            value: '#e68e2e',
           },
           links: {
-            color: '#F5D393',
+            color: '#f5d393',
             distance: 150,
             enable: true,
             opacity: 0.5,
@@ -89,7 +87,6 @@ const ParticlesContainer = () => {
             value: { min: 1, max: 5 },
           },
         },
-
         detectRetina: true,
       }}
     />

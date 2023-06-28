@@ -1,5 +1,3 @@
-import React from 'react';
-
 // next image
 import Image from 'next/image';
 
@@ -14,7 +12,7 @@ const ProjectsBtn = () => {
     <div className='mx-auto xl:mx-0'>
       <Link
         href={'/work'}
-        className='w-[185px] h-[185px] flex justify-center items-center relative group bg-circleStar bg-cover bg-center bg-no-repeat'
+        className='relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group'
       >
         <Image
           src={'/rounded-text.png'}

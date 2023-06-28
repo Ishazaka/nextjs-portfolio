@@ -13,7 +13,7 @@ import {
 
 const Socials = () => {
   return (
-    <div className='flex items-center gap-x-5 text-white text-lg'>
+    <div className='flex items-center gap-x-5 text-lg'>
       <Link href={''} className='hover:text-accent transition-all duration-300'>
         <RiYoutubeLine />
       </Link>
@@ -24,13 +24,13 @@ const Socials = () => {
         <RiInstagramLine />
       </Link>
       <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiPinterestLine />
+        <RiDribbbleLine />
       </Link>
       <Link href={''} className='hover:text-accent transition-all duration-300'>
         <RiBehanceLine />
       </Link>
       <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiDribbbleLine />
+        <RiPinterestLine />
       </Link>
     </div>
   );
