@@ -25,12 +25,26 @@ export const aboutData = [
       {
         // title: 'Web Development',
         icons: [
-          <FaHtml5 key="html"/>,
-           "HTML",
-          <FaCss3 key="css3"/>,
-           "CSS3",
-          <FaJs key="jacascript"/>,
-          "Javascript"
+          {
+            value: <SiNextdotjs/>
+          },
+          {
+            value: "NextJs",
+          },
+          {
+            value:   <SiTypescript/>
+          },
+          {
+            value:    "Typescript"
+          },
+
+          {
+            value:  <FaJs/>
+          },
+          
+          {
+            value:   "Javascript",
+          }     
          
         ],
       },
@@ -38,19 +52,62 @@ export const aboutData = [
         // title: 'UI/UX Design',
         // icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
         icons: [
-           <FaReact key="react"/>,
-        "ReactJs",
-        <SiNextdotjs key="nextjs"/> 
-        ,"NextJs",
-        <SiTypescript key="typescript"/>
-        ,"Typescript"],
+          {
+            value:  <FaReact/>,
+      
+          },
+
+          {
+            value:    "ReactJs",
+          },
+       
+          {
+            value: <FaHtml5/>,
+      
+          },
+
+          {
+            value:  "HTML",
+          },
+          {
+            value: <FaCss3/>
+          },
+          
+          {
+            value:  "CSS3",
+          },
+          
+      
+        ],
       },
       {
         // title: 'UI/UX Design',
         // icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-        icons: [ <SiMaterialdesign key="materialUi"/>,"MaterialUI",
-        <FaBootstrap key="bootstrap"/>,"Bootstrap",
-        <SiNodedotjs key="nodejs"/>,"NodeJs"],
+        icons: [ 
+          {
+            value:  <SiMaterialdesign/>,
+      
+          },
+
+          {
+            value:    "MaterialUI",
+          },
+          {
+            value: <FaBootstrap/>
+          },
+          
+          {
+            value: "Bootstrap",
+          },
+          {
+            value:   <SiNodedotjs/>
+          },
+          {
+            value:    "NodeJs"
+          },
+        
+        
+     ],
       },
     ],
   },
@@ -204,15 +261,15 @@ const About = () => {
                   <div className='font-light mb-2 md:mb-0'>{item.title}</div>
                   <div className='hidden md:flex'>-</div>
                   <div>{item.stage}</div>
-                  {/* <div className='flex gap-x-4'>
+                  <div className='flex gap-x-4'>
            
                     {item.icons?.map((icon, itemIndex) => {
-                      const uniqueKey = `icon_${itemIndex}`;
-                      return <div className='text-2xl text-white' key={uniqueKey} >
-                     {icon} 
+                 
+                      return <div key={itemIndex} className='text-2xl text-white' >
+                     {icon.value} 
                       </div>;
                     })}
-                  </div> */}
+                  </div>
                 </div>
               );
             })}
