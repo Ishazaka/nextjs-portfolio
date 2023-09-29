@@ -13,10 +13,7 @@ import {
 
 import {
   SiNextdotjs,
-  SiFramer,
   SiTypescript,
-  SiAdobexd,
-  SiAdobephotoshop,
   SiMaterialdesign,
   SiNodedotjs
 } from 'react-icons/si';
@@ -29,18 +26,25 @@ export const aboutData = [
       {
         // title: 'Web Development',
         icons: [
-          <FaHtml5 />, "HTML",
-          <FaCss3 />, "CSS3",
-          <FaJs />,"Javascript"
+          <FaHtml5 />,
+           "HTML",
+          <FaCss3 />,
+           "CSS3",
+          <FaJs />,
+          "Javascript"
          
         ],
       },
       {
         // title: 'UI/UX Design',
         // icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-        icons: [ <FaReact />,"ReactJs",
-        <SiNextdotjs />,"NextJs",
-        <SiTypescript />,"Typescript"],
+        icons: [
+           <FaReact />,
+        "ReactJs",
+        <SiNextdotjs /> 
+        ,"NextJs",
+        <SiTypescript />
+        ,"Typescript"],
       },
       {
         // title: 'UI/UX Design',
@@ -159,42 +163,10 @@ const About = () => {
             className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
           >
             <div className='flex flex-1 xl:gap-x-6'>
-              {/* experience */}
-              {/* <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} /> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Years of experience
-                </div>
-              </div> */}
-              {/* clients */}
-              {/* <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5} /> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Satisfied clients
-                </div>
-              </div> */}
-              {/* projects */}
-              {/* <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5} /> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Finished projects
-                </div>
-              </div> */}
-              {/* awards */}
-              {/* <div className='relative flex-1'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={5} /> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Winning awards
-                </div>
-              </div> */}
+            
+          
+             
+           
             </div>
           </motion.div>
         </div>
@@ -229,14 +201,17 @@ const About = () => {
                   key={itemIndex}
                   className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
                 >
-                  {/* title */}
+         
                   <div className='font-light mb-2 md:mb-0'>{item.title}</div>
                   <div className='hidden md:flex'>-</div>
                   <div>{item.stage}</div>
                   <div className='flex gap-x-4'>
-                    {/* icons */}
+           
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className='text-2xl text-white'>{icon}</div>;
+                      const uniqueKey = `icon_${itemIndex}`;
+                      return <div className='text-2xl text-white' key={uniqueKey} >
+                     {icon} 
+                      </div>;
                     })}
                   </div>
                 </div>
