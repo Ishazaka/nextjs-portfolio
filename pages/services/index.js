@@ -22,7 +22,7 @@ const Services = () => {
               exit='hidden'
               className='h2 xl:mt-8'
             >
-              My services <span className='text-accent'>.</span>
+           Tech  <span className='text-accent'>Blogs.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn('up', 0.4)}
@@ -31,8 +31,7 @@ const Services = () => {
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-              eveniet dignissimos distinctio tempore harum laudantium.
+            I like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people on <a style={{color: 'red', textDecoration: 'underline'}} href='https://codinglamp.com/tech/'>CodingLamp</a> and <a  style={{color: 'red', textDecoration: 'underline'}} href='https://medium.com/@Isha_'>Medium.</a> 
             </motion.p>
           </div>
 

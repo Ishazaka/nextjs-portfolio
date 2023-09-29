@@ -23,29 +23,29 @@ import { FreeMode, Pagination } from 'swiper';
 export const serviceData = [
   {
     icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Let, Var and Const',
+    description: 'Var keyword has global scope or function scope It means if any variable',
+  link: 'https://medium.com/dev-genius/let-var-and-const-in-js-2f6226457d2f'
   },
   {
     icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'React vs Angular',
+    description: 'React JS is a free and open-source JavaScript library.',
+  link: 'https://medium.com/@Isha_/angular-vs-react-what-to-choose-and-why-f960d53bb373'
   },
   {
     icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Programming',
+    description: 'What are the Basic Fundamental Concepts of Programming?',
+     link:'https://codinglamp.com/tech/what-are-the-basic-fundamental-concepts-of-programming/' 
   },
   {
     icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Mobile vs Web App',
+    description: 'Advantages And DisAdvantages of Web apps and Mobile Apps',
+  link: 'https://codinglamp.com/tech/web-app-vs-mobile-app-what-should-your-startup-choose/'
   },
-  {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
+
 ];
 
 const ServiceSlider = () => {
@@ -76,12 +76,14 @@ const ServiceSlider = () => {
               {/* icon */}
               <div className='text-4xl text-accent mb-4'>{item.icon}</div>
               {/* title & desc */}
+              <a href={item.link}>
               <div className='mb-8'>
                 <div className='mb-2 text-lg'>{item.title}</div>
                 <p className='max-w-[350px] leading-normal'>
                   {item.description}
                 </p>
               </div>
+              </a>
               {/* arrow */}
               <div className='text-3xl'>
                 <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300' />
