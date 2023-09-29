@@ -6,7 +6,6 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
   FaBootstrap
 
 } from 'react-icons/fa';
@@ -26,11 +25,11 @@ export const aboutData = [
       {
         // title: 'Web Development',
         icons: [
-          <FaHtml5 />,
+          <FaHtml5 key="html"/>,
            "HTML",
-          <FaCss3 />,
+          <FaCss3 key="css3"/>,
            "CSS3",
-          <FaJs />,
+          <FaJs key="jacascript"/>,
           "Javascript"
          
         ],
@@ -39,19 +38,19 @@ export const aboutData = [
         // title: 'UI/UX Design',
         // icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
         icons: [
-           <FaReact />,
+           <FaReact key="react"/>,
         "ReactJs",
-        <SiNextdotjs /> 
+        <SiNextdotjs key="nextjs"/> 
         ,"NextJs",
-        <SiTypescript />
+        <SiTypescript key="typescript"/>
         ,"Typescript"],
       },
       {
         // title: 'UI/UX Design',
         // icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-        icons: [ <SiMaterialdesign />,"MaterialUI",
-        <FaBootstrap />,"Bootstrap",
-        <SiNodedotjs />,"NodeJs"],
+        icons: [ <SiMaterialdesign key="materialUi"/>,"MaterialUI",
+        <FaBootstrap key="bootstrap"/>,"Bootstrap",
+        <SiNodedotjs key="nodejs"/>,"NodeJs"],
       },
     ],
   },
@@ -205,7 +204,7 @@ const About = () => {
                   <div className='font-light mb-2 md:mb-0'>{item.title}</div>
                   <div className='hidden md:flex'>-</div>
                   <div>{item.stage}</div>
-                  <div className='flex gap-x-4'>
+                  {/* <div className='flex gap-x-4'>
            
                     {item.icons?.map((icon, itemIndex) => {
                       const uniqueKey = `icon_${itemIndex}`;
@@ -213,7 +212,7 @@ const About = () => {
                      {icon} 
                       </div>;
                     })}
-                  </div>
+                  </div> */}
                 </div>
               );
             })}
